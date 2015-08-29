@@ -1,5 +1,7 @@
-a: {{a}}
-b: {{b}}
-c: {{c}}
-d: {{d}}
-{{nested-component a=a}}
+<div>
+  a: {{attrs.a}}
+  b: {{attrs.b}}
+  c: {{attrs.c}}
+  d: {{attrs.d}}
+  <nested-component a={{attrs.a}} />
+</div>

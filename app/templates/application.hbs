@@ -25,5 +25,7 @@
 {{/if}}
 
 {{#if showList}}
-  {{complex-items listItems=listItems}}
+  {{!-- {{simple-component data="hello"}} --}}
+  {{!-- <simple-component data={{"hello"}} /> --}}
+  <complex-items listItems={{listItems}} />
 {{/if}}
